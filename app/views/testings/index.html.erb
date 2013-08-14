@@ -1,0 +1,33 @@
+<h1>Listing testings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>User</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @testings.each do |testing| %>
+      <tr>
+        <td><%= testing.username %></td>
+        <td><%= testing.user_id %></td>
+        <td><%= testing.firstname %></td>
+        <td><%= testing.lastname %></td>
+        <td><%= link_to 'Show', testing %></td>
+        <td><%= link_to 'Edit', edit_testing_path(testing) %></td>
+        <td><%= link_to 'Destroy', testing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Testing', new_testing_path %>
