@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-#todo: matt - why no bundler in gemfile or simplecov?
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
